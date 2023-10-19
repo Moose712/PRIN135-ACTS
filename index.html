@@ -1,30 +1,225 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <h1>Gervacio, Mark Angelo</h1>
-    </head>
-    <body>
-        <h1>First Set</h1>
-        <ul>
-            <li><a href="ACT 01/index.html">Cat Photo App</a></li>
-            <li><a href="ACT 02/index.html">Cafe Men</a></li>
-            <li><a href="ACT 03/index.html">Colored Markers</a></li>
-            <li><a href="ACT 04/index.html">Registration Form</a></li>
-        </ul>
 
-        <h1>Second Set</h1> 
-        <ul>
-            <li><a href="ACT 05/index.html">Rotho Painting</a></li>
-            <li><a href="ACT 06/index.html">Photo Gallery</a></li>
-            <li><a href="ACT 07/index.html">Nutrition Label</a></li>
-        </ul>
-        
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <h1>Certificates</h1>
-        <ul>
-            <li><a href="Cert 01/index.html">Survey Form</a></li>
-        </ul>
-    </body>
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Martian+Mono:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Gervacio, Mark Angelo</title>
+</head>
+
+<style>
+    body {
+        min-height: 100vh;
+        background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        font-family: 'Anton', sans-serif;
+        font-family: 'Bebas Neue', sans-serif;
+        font-family: 'Karla', sans-serif;
+        font-family: 'Martian Mono', monospace;
+
+    }
+
+    .container {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 25px;  
+    }
+
+    .outsideContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aTags {
+        color: black;
+        transition: all 0.2s ease;
+    }
+
+    .aTags:hover {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: all 0.2s ease;
+        font-size: 25px;
+    }
+
+    /* @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap"); */
+
+
+    #container1 {
+        position: absolute;
+        margin: auto;
+        width: 100vw;
+        /* height: 80pt; */
+        top: 0;
+        bottom: 0;
+
+        filter: url(#threshold) blur(0.6px);
+    }
+
+    #text1,
+    #text2 {
+        position: absolute;
+        width: 100%;
+        display: inline-block;
+
+        font-family: 'Anton', sans-serif;
+        font-family: 'Bebas Neue', sans-serif;
+        font-family: 'Karla', sans-serif;
+        font-family: 'Martian Mono', monospace;
+        font-size: 80pt;
+
+        text-align: center;
+
+        user-select: none;
+    }
+
+</style>
+
+
+<body>
+    <div id="container1">
+        <span id="text1"></span>
+        <span id="text2"></span>
+    </div>
+    
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 255 -140" />
+            </filter>
+        </defs>
+    </svg>
+    <!-- <h1 class="text-center mt-5">Gervacio, Mark Angelo</h1>  -->
+    <div class="container containerClass mt-5 p-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h1>First Set</h1>
+                <a class="aTags" href="ACT 01/index.html">Cat Photo App</a><br>
+                <a class="aTags" href="ACT 02/index.html">Cafe Men</a><br>
+                <a class="aTags" href="ACT 03/index.html">Colored Markers</a><br>
+                <a class="aTags" href="ACT 04/index.html">Registration Form</a><br>
+            </div>
+            <div class="col-md-4">
+                <h1>Second Set</h1>
+                <a class="aTags" href="ACT 05/index.html">Rotho Painting</a><br>
+                <a class="aTags" href="ACT 06/index.html">Photo Gallery</a><br>
+                <a class="aTags" href="ACT 07/index.html">Nutrition Label</a><br>
+            </div>
+            <div class="col-md-4">
+                <h1>Certificates</h1>
+                <a class="aTags" href="Cert 01/index.html">Survey Form</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+<script>
+    const elts = {
+            text1: document.getElementById("text1"),
+            text2: document.getElementById("text2")
+        };
+
+        const texts = [
+            "Gervacio",
+            "Mark",
+            "Angelo"
+        ];
+
+        const morphTime = 1;
+        const cooldownTime = 0.25;
+
+        let textIndex = texts.length - 1;
+        let time = new Date();
+        let morph = 0;
+        let cooldown = cooldownTime;
+
+        elts.text1.textContent = texts[textIndex % texts.length];
+        elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+
+        function doMorph() {
+            morph -= cooldown;
+            cooldown = 0;
+
+            let fraction = morph / morphTime;
+
+            if (fraction > 1) {
+                cooldown = cooldownTime;
+                fraction = 1;
+            }
+
+            setMorph(fraction);
+        }
+
+        function setMorph(fraction) {
+            elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+            elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+            fraction = 1 - fraction;
+            elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+            elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+            elts.text1.textContent = texts[textIndex % texts.length];
+            elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+        }
+
+        function doCooldown() {
+            morph = 0;
+
+            elts.text2.style.filter = "";
+            elts.text2.style.opacity = "100%";
+
+            elts.text1.style.filter = "";
+            elts.text1.style.opacity = "0%";
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            let newTime = new Date();
+            let shouldIncrementIndex = cooldown > 0;
+            let dt = (newTime - time) / 1000;
+            time = newTime;
+
+            cooldown -= dt;
+
+            if (cooldown <= 0) {
+                if (shouldIncrementIndex) {
+                    textIndex++;
+                }
+
+                doMorph();
+            } else {
+                doCooldown();
+            }
+        }
+
+        animate();
+</script>
+
 </html>
